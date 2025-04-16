@@ -1,0 +1,304 @@
+/* Base Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 70px;
+}
+
+body {
+  padding-top: 30px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Nav Container */
+.nav-container {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #213547;
+  gap: 5px;
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: inherit;
+}
+
+.law-icon {
+  width: 30px;
+  height: 30px;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #213547;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #535bf2;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.auth-buttons button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login {
+  background: transparent;
+  color: #213547;
+  border: 2px solid #213547;
+}
+
+.signup {
+  background-color: #646cff;
+  color: white;
+}
+
+.logout {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+/* Avatar/Profile */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7e5bef, #55c2ff);
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Softer border */
+  
+  
+}
+
+.profile-circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(126, 91, 239, 0.4);
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 16px 20px;
+  width: 260px;
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-dropdown p {
+  margin: 10px 0;
+  font-size: 15px;
+  color:  #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-dropdown strong {
+  min-width: 60px;
+  color: #3b82f6;
+}
+
+.profile-dropdown .logout {
+  margin-top: 16px;
+  width: 100%;
+  background-color: #ff4d4f;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.profile-dropdown .logout:hover {
+  background-color: #e84343;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 1.1rem;
+  color: #213547;
+}
+
+/* Mobile Icon */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .navbar {
+  background-color: #1e1e2f;
+}
+
+body.dark .nav-links a {
+  color: #e0e0e0;
+}
+
+body.dark .nav-links a:hover {
+  color: #9fa8ff;
+}
+
+body.dark .logo,
+body.dark .logo-text {
+  color: #ffffff;
+}
+
+body.dark .login {
+  border: 2px solid #ccc;
+  color: #ccc;
+}
+
+body.dark .signup {
+  background-color: #7e5bef;
+}
+
+body.dark .profile-dropdown {
+  background-color: #2a2a3b;
+  color: #e0e0e0;
+}
+
+body.dark .profile-dropdown strong {
+  color: #9fa8ff;
+}
+
+body.dark .theme-toggle {
+  color: #f1f1f1;
+}
+/* Glassmorphism for profile dropdown */
+.profile-dropdown.glass {
+  background: rgba(255, 255, 255, 0.85); /* More solid white with light transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  color: #111; /* Dark text for better readability */
+  animation: fadeSlide 0.3s ease-in-out;
+}
+
+/* Glowing effect on hover */
+.profile-circle:hover {
+  box-shadow: 0 0 0 4px rgba(126, 91, 239, 0.3), 0 8px 30px rgba(126, 91, 239, 0.6);
+}
+
+/* Animation for dropdown */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  body.dark .nav-links {
+    background-color: #1e1e2f;
+  }
+}

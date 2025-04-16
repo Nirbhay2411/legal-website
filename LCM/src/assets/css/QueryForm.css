@@ -1,0 +1,95 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.user-query-form-container {
+  background: linear-gradient(135deg, #e0f7fa, #e0f2f1);
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* Space from navbar */
+  min-height: 100vh;
+}
+
+.user-query-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+}
+
+.user-query-form .logo {
+  width: 65px;
+  margin-bottom: 10px;
+}
+
+.user-query-form h2 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+/* Form Group Spacing */
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.user-query-form input,
+.user-query-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.user-query-form input:focus,
+.user-query-form textarea:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+/* Submit Button */
+.user-query-form button {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.user-query-form button:hover {
+  background-color: #004d40;
+}
+/* .logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 ;
+} */
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .user-query-form {
+    padding: 25px 20px;
+  }
+}

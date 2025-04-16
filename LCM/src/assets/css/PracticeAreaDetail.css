@@ -1,0 +1,67 @@
+.practice-detail-page {
+    padding: 100px 20px;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .practice-detail-page .container {
+    max-width: 900px;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: left;
+  }
+  
+  .practice-detail-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #1a3e72;
+    font-weight: 700;
+  }
+  
+  .practice-detail-page .divider {
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #1a3e72, #d4af37);
+    margin-bottom: 30px;
+    border-radius: 2px;
+  }
+  
+  .practice-detail-page .summary {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #2d2d2d;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  
+  .practice-detail-page .details {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #444;
+    opacity: 0.95;
+  }
+  
+  @media (max-width: 768px) {
+    .practice-detail-page .container {
+      padding: 30px 20px;
+    }
+  
+    .practice-detail-page h1 {
+      font-size: 2.2rem;
+    }
+  
+    .practice-detail-page .summary {
+      font-size: 1.1rem;
+    }
+  
+    .practice-detail-page .details {
+      font-size: 1rem;
+    }
+  }
+  

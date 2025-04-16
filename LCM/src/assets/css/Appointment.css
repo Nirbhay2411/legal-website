@@ -1,0 +1,70 @@
+/* Ensure full-page centering */
+.appointment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Adjust if navbar height differs */
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+    margin-top: 20px;
+}
+
+
+/* Style for the form box */
+.appointment-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure form elements are properly spaced */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Center button */
+/* Updated Book Appointment Button */
+.book-appointment-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b); /* Vibrant gradient */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect */
+.book-appointment-btn:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c); /* Reverse gradient */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Active effect (when clicked) */
+.book-appointment-btn:active {
+    transform: scale(0.98);
+}
